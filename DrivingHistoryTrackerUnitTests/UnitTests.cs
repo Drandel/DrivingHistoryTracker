@@ -291,5 +291,3 @@ namespace DrivingHistoryTrackerUnitTests
         }
     }
 }
-
-//Validation for all fields
