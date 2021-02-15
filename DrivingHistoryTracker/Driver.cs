@@ -22,7 +22,6 @@ namespace DrivingHistoryTracker
             }
         }
 
-
         /// <summary>
         /// Constructs a new instance of <see cref="Driver"/>.
         /// </summary>

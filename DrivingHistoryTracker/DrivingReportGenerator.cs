@@ -11,7 +11,7 @@ namespace DrivingHistoryTracker
         public List<Driver> Drivers { get; set; }
 
         /// <summary>
-        /// Constructs a new instance of <see cref="DrivingReportGenerator"/> and parses incoming data to generate a driving report.
+        /// Constructs a new instance of <see cref="DrivingReportGenerator"/> and parses driving data.
         /// </summary>
         /// <param name="drivingData">A list of strings containing Driver and Trip information.</param>
         public DrivingReportGenerator(string[] drivingData)
@@ -22,7 +22,7 @@ namespace DrivingHistoryTracker
         }
 
         /// <summary>
-        /// Generates a report detailing total miles driven and average speed of all trips for each <see cref="Driver"/>.
+        /// Generates a report detailing total miles driven and average speed of all <see cref="Trip"/>s for each <see cref="Driver"/>.
         /// </summary>
         public void GenerateReport()
         {
@@ -30,7 +30,6 @@ namespace DrivingHistoryTracker
             foreach (Driver driver in Drivers)
             {
                 Console.WriteLine($"{driver.Name}: {Round(driver.TotalMilesDriven)} miles " + $"{(driver.GetAverageSpeed() > 0 ? $"@ {Round(driver.GetAverageSpeed())} mph" : "")}");
-
             }
         }
 

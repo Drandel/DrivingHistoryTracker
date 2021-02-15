@@ -31,7 +31,7 @@ namespace DrivingHistoryTracker
         }
 
         /// <summary>
-        /// Calculates the speed of the Trip.
+        /// Calculates the speed of a Trip.
         /// </summary>
         /// <param name="start">Time at the start of the Trip.</param>
         /// <param name="end">Time at the end of the Trip.</param>
@@ -44,11 +44,11 @@ namespace DrivingHistoryTracker
         }
 
         /// <summary>
-        /// Calculates the duration of the trip in hours.
+        /// Calculates the duration of a trip in hours.
         /// </summary>
-        /// <param name="start">Time at the start of the Trip.</param>
-        /// <param name="end">Time at the end of the Trip.</param>
-        /// <returns>Duration of Trip.</returns>
+        /// <param name="start">Time at the start of a Trip.</param>
+        /// <param name="end">Time at the end of a Trip.</param>
+        /// <returns>Duration of a Trip.</returns>
         private double GetTripDuration(string start, string end)
         {
             TimeSpan duration = DateTime.Parse(end).Subtract(DateTime.Parse(start));
