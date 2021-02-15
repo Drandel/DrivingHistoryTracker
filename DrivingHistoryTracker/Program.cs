@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 namespace DrivingHistoryTracker
 {
@@ -9,6 +7,7 @@ namespace DrivingHistoryTracker
     {
         static void Main(string[] args)
         {
+            //DELETE input.txt FILE BEFORE SUBMITTING
             if(args.Length > 0)
             {
                 string[] fileContents = File.ReadAllLines(args[0]);
